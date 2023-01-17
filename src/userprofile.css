@@ -1,0 +1,72 @@
+#userProfileContainer{
+    background-color: rebeccapurple;
+    height: max-content;
+    width: 100%;
+    padding: 3rem 0;
+}
+#userProfile{
+    background-color: #f1f1f1;
+    margin: auto;
+    width: 90%;
+    height: 150vh;
+    /* max-height: fit-content; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+}
+#userProfile input{
+    height: 3rem;
+    border-radius: 15px;
+    outline: thin;
+    border:none;
+    font-size: 1rem;
+    text-align: center;
+}
+#userImage{
+    height: 40%;
+    text-align: center;
+    overflow: hidden;
+}
+#userImage img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.profileInput {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    align-items: center;
+    gap: .5rem;
+}
+#userProfileForm{
+    padding: 1rem;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 80%;
+}
+#userProfileForm button {
+    width:fit-content;
+    padding: 0 1.5rem;
+    height: 2rem;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    line-height: 2rem;
+
+}
+.buttonContainer { 
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

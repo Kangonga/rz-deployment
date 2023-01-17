@@ -1,0 +1,38 @@
+
+.container, .form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+.login-form input:first-of-type {
+    margin-bottom: 0;
+    margin: 0.5rem 0 .8rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+.login-form input:last-of-type{
+  /* background-color: rebeccapurple; */
+  margin-bottom: 0.5rem;
+}
+.login-form > button {
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+#errorDiv{
+    font-size: .9rem;
+    color:rgb(102, 31, 31);
+    margin-bottom: 1rem;
+}

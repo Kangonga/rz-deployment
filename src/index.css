@@ -1,0 +1,310 @@
+body,button,input,textarea {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  max-width: 100vw;
+  min-height: 100vw;
+  overflow-x:hidden
+}
+
+.header{
+  display: flex;
+  height: 16vh;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: darkturquoise;
+  align-items: center;
+}
+nav{
+  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 70%;
+  align-items: center;
+  gap: .5rem;
+}
+#login {
+  background-color: rebeccapurple;
+  color: white;
+  height: max-content;
+  line-height: 2rem;
+  padding: 0 .5rem;
+  /* text-align: center; */
+  border-radius: 5px;
+  padding: 0 1.5rem;
+  transform: translateX(0);
+  transition: 0s;
+  padding-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+#login:hover{
+  /* transform: translateX(-5px); */
+  transition-duration: .2s;
+}
+#login:active {
+  background-color: #810d0d;
+  transform: translateX(3px);
+}
+.logoHolder{
+  width: 30%;
+}
+.logoHolder img{
+  height:11vh;
+}
+.landingPageBody{
+  width: 100%;
+  margin: auto;
+  padding-top: 5rem;
+  text-align: center;
+  height: 80vh;
+  background-color: #f1f1f1;
+
+}
+.landingPageBody h1 {
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.landingPageBody p {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.landingPageBody input {
+  width: 30vw;
+  margin: auto;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+button{
+  background-color: rebeccapurple;
+  color: white;
+}
+button:active{
+  transform:translateX(-5px);
+  background-color:#810d0d;
+  color:white;
+}
+.subscribe {
+  margin: 1rem;
+  height: 2rem;
+  border-radius: 5px;
+  width: 12vw;
+  border: none;
+  font-size: 16px;
+}
+.landingPageCTA{
+  padding-top: 2rem;
+  text-align: center;
+  text-align: start;
+  width: 80%;
+  margin: auto;
+  height: 70vh;
+  max-width: 100vw;
+}
+.landingPageCTA h1 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+.landingPageCTA h2 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color:rgb(104, 100, 100);
+  margin: 1rem 0;  
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+}
+.categories a{
+  background-color: lightgray;
+  /* background-color: lightgreen; */
+  height: 5rem;
+  width: 18rem;
+  text-align: center;
+  line-height: 5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+nav a {
+  border: none;
+  /* width: 12rem; */
+}
+nav a:hover{
+  border: none;
+  text-decoration: none;
+  transform: translateX(-5px);
+  transition: .5s;
+  padding-bottom: 5px;
+  /* border-bottom: 1px solid rebeccapurple; */
+  padding-bottom: 5px;
+}
+.landingPageFooter {
+  height: 40vh;
+  background-color:rgb(82, 10, 112);
+  display: flex;
+  justify-content: space-evenly;
+  }
+.footerDiv h1{
+  font-size: 1.6rem;
+}
+.footerDiv > *{
+  color: white;
+  margin-top: 1rem;
+}
+#employerContainer.dashboard{
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.heroImage{
+  width: 100%;
+  opacity: .7;
+}
+
+/* -------------Media Queries--------------------------------------- */
+@media (max-width:660px){
+  .landingPageFooter{
+    height:fit-content;
+    display:flex;
+    padding-bottom: 1rem;
+    flex-direction: column;
+  }
+  .footerDiv {
+    color: white;
+    margin: auto;
+    height: max-content;
+    width: 60%;
+  }.footerDiv h1 {
+    text-align: start;
+  }
+  .heroImage{
+    display: none;
+  }
+  #employerContainer.dashboard{
+    display: block;
+    margin: 0;
+    height: max-content;
+  }
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .categories div{
+    background-color: lightgray;
+    /* background-color: lightgreen; */
+    height: 5rem;
+    width: 70vw;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin:auto;
+    /* overflow: scroll; */
+  }
+  .landingPageCTA{
+    padding-top: 2rem;
+    text-align: center;
+    text-align: start;
+    width: 80%;
+    margin: auto;
+    height: max-content;
+    max-width: 100vw;
+    padding-bottom:1rem;
+  }
+  .subscribe{
+    width:25vw
+  }
+  .landingPageBody input {
+    width: 40vw;
+    margin: auto;
+    height: 2rem;
+    border-radius: 5px;
+  }
+}
+@media (min-width:660px) and (max-width:1000px){
+  .landingPageFooter{
+    height:fit-content;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    padding-bottom: 1rem;
+  }
+  .footerDiv {
+    color: white;
+    margin: auto;
+    /* width:80% */
+  }
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .categories div{
+    background-color: lightgray;
+    height: 6rem;
+    width: 40vw;
+    text-align: center;
+    line-height: 6rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    }
+  .landingPageCTA{
+    padding-top: 2rem;
+    text-align: center;
+    text-align: start;
+    width: 80%;
+    margin: auto;
+    height: max-content;
+    max-width: 100vw;
+    padding-bottom:1rem;
+  }
+  .subscribe{
+    width:25vw
+  }
+  .landingPageBody input {
+    width: 40vw;
+    margin: auto;
+    height: 2rem;
+    border-radius: 5px;
+  }
+}
