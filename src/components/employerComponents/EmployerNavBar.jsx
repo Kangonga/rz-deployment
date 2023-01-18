@@ -10,7 +10,7 @@ export default function EmployerNavBar(){
     }
     return(
         <>
-        {!user.username?<Navigate to="/login" />:null}
+        {!user?.username?<Navigate to="/login" />:null}
          <header className="header">
             <figure className="logoHolder">
                 <img src={logo} alt="sitelogo" className="sitelogo" />

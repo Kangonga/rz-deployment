@@ -11,13 +11,13 @@ export default function UserNavBar(){
     }
     return(
         <>
-        {!user.username?<Navigate to="/login" />:null}
+        {!user?.username?<Navigate to="/login" />:null}
          <header className="header">
             <figure className="logoHolder">
                 <img src={logo} alt="sitelogo" className="sitelogo" />
             </figure>
             <nav>
-            {user.username&& <span>Hello {user?.username}</span>}
+            {user?.username&& <span>Hello {user?.username}</span>}
             <Link to="/userprofile">My Profile</Link>
             <Link to="/jobs">Find Jobs</Link>
             <Link to="/userjobs">My Jobs</Link>

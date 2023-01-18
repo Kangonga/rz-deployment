@@ -8,11 +8,11 @@ export const SidebarData=[
             title:"Dashboard",
             icon:<FaTh/>
         },
-        {
-            path:"/",
-            title:"Home",
-            icon:<FaHome/>
-        },
+        // {
+        //     path:"/",
+        //     title:"Home",
+        //     icon:<FaHome/>
+        // },
         {
             path:"/admin/employers",
             title:"Employers",
