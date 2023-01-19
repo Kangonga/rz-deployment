@@ -26,9 +26,9 @@ export default function UserProfile(){
     return(
         <>
         <UserNavBar />
-        {console.log("applied",applied)}
-        {console.log("matched",matched)}
-        {user.id&& <UserProfileContainer user={user} applied={applied} matched={matched}/>}
+        {/* {console.log("applied",applied)}
+        {console.log("matched",matched)} */}
+        {user?.id&& <UserProfileContainer user={user} applied={applied} matched={matched}/>}
         </>
         
     )

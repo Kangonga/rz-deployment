@@ -24,7 +24,7 @@ import Logo from "../../assets/sitelogo.jpg"
   return (
     <div className='userlist'>
        <UserNavBar/>
-                 {console.log(jobsarr)}      
+                 {/* {console.log(jobsarr)}       */}
         <section id='cardContainer' >
            {
             matchedJobs? <NoJobs/>:matchedJobs.map((matchedJob, index) => {
@@ -44,11 +44,11 @@ import Logo from "../../assets/sitelogo.jpg"
 function MatchedJobs({matchedJob}) {
   return(
             <div className='userJobsCard'>
-                  <h2>Job Title: {matchedJob.job.job_title}</h2>
-                  <h3>Category: {matchedJob.job.category}</h3>
-                  <textarea value={`Job Description: ${matchedJob.job.job_description}`}/>
-                  <input value={`Salary: ${matchedJob.job.salary}`}/>
-                  <input value={`Employer: ${matchedJob.employer.username}`}/>
+                  <h2>Job Title: {matchedJob.job?.job_title}</h2>
+                  <h3>Category: {matchedJob.job?.category}</h3>
+                  <textarea value={`Job Description: ${matchedJob.job?.job_description}`}/>
+                  <input value={`Salary: ${matchedJob.job?.salary}`}/>
+                  <input value={`Employer: ${matchedJob.employer?.username}`}/>
                   <input value="Status: Active"/>
             </div>
   )

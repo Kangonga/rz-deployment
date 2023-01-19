@@ -48,8 +48,8 @@ function UserAppliedJobs({appliedJob}) {
             {/* <input>Status: Complete/applied/active</p> */}
             <textarea value={`Job Description: ${appliedJob.job.job_description}`}/>
             {/* <input value={`Responsibilities: ${appliedJob.job.responsibilities}`}/> */}
-            <input value={`Salary: ${appliedJob.job.salary}`}/>
-            <input value={`Employer: ${appliedJob.employer.username}`}/>
+            <input value={`Salary: ${appliedJob.job?.salary}`}/>
+            <input value={`Employer: ${appliedJob.employer?.username}`}/>
     </div>
   )
 }

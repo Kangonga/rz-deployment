@@ -48,7 +48,7 @@ export default function JobList() {
     })
     .then(response => console.log(response.json()))
     .then((status) => {setStatus("applied")})
-    console.log("applied");
+    // console.log("applied");
   }
   
 
@@ -73,22 +73,22 @@ function JobCard ({job, handleClick, handleSubmit}) {
       <input type="hidden" name='id' value={job.id} />
       <input type="hidden" name='employer_Id' value={job.employer.id} />
       <label htmlFor="job_title">Job Title:</label>   
-      <input  value={job.job_title} />
-      <h3>Job Category: {job.category}</h3>
+      <input  value={job?.job_title} />
+      <h3>Job Category: {job?.category}</h3>
 
       <label htmlFor="responsibilities">Responsibilities:</label>
       <input
-      value={job.responsibilities}
+      value={job?.responsibilities}
       />
      
       <label htmlFor="salary">Salary:</label>
       <input
-      value={job.salary}
+      value={job?.salary}
       />
         
       <label htmlFor="job-description">Job Description:</label>
         <input
-      value={job.job_description}
+      value={job?.job_description}
        />
 
       <button onClick={handleClick} className='button'>{}</button>
