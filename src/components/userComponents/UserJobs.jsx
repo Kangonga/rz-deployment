@@ -27,7 +27,7 @@ import Logo from "../../assets/sitelogo.jpg"
                  {/* {console.log(jobsarr)}       */}
         <section id='cardContainer' >
            {
-            matchedJobs? <NoJobs/>:matchedJobs.map((matchedJob, index) => {
+            !matchedJobs? <NoJobs/>:matchedJobs.map((matchedJob, index) => {
               return(
                 <MatchedJobs matchedJob={matchedJob} key={index}/>
               )
