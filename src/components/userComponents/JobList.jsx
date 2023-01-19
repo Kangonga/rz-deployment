@@ -38,7 +38,7 @@ export default function JobList() {
     employer_id: e.target.employer_Id.value
     })
     console.log(job)
-    fetch(`http://localhost:3000/job_applications/`, {
+    fetch(`https://riziki.onrender.com/job_applications/`, {
       method: "POST",
       headers:{
         "Content-Type": "application/json",

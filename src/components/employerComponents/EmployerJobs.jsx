@@ -10,7 +10,7 @@ export default function EmployerJobs(){
     useEffect(()=>{
         fetch(`https://riziki.onrender.com/jobs`)
         .then(resp=>resp.json())
-        .then(data=>setJobs(data.filter(job=>job.employer.id==user?.id)));
+        .then(data=>setJobs(data.filter(job=>job.employer?.id==user?.id)));
     },[])
     return(
     <>
