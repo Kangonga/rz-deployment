@@ -57,7 +57,7 @@ function JobCard({job}){
                 <p>Main Skill: Ruby on Rails</p>
                 {/* <p>Experience Level: Expert/Intermediate/Junior</p> */}
                 <p>Employer: {job.employer.username}</p>  
-                <p>Employee: {(jobseeker.filter(person=>person.id==job.jobseeker_id)[0]?.username)}</p>                
+                <p>Employee: {job.jobseeker!==null?jobseeker.filter(person=>person.id==job.jobseeker_id)[0]?.username:"ilhan"}</p>                
               
                 <p>Job Title: {job.job.job_title}</p>
                 {/* <p>Number of applicants: {job.number_of_applicants}</p> */}
