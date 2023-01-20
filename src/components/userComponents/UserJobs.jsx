@@ -13,12 +13,6 @@ import Logo from "../../assets/sitelogo.jpg"
     fetch("https://riziki.onrender.com/matched_jobs")
     .then(response => response.json())
     .then(data=>setMatchedJobs(data?.filter(job=>job.jobseeker_id == user?.id)))
-    // .then(data => {
-    //       setMatchedJobs(data.filter(job=>job.jobseeker_id == user?.id).filter((job,pos)=>{
-    //         return data.indexOf(job)==pos
-    //       }))
-    // }
-    // )
   }, [])
 
   return (

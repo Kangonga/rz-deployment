@@ -19,7 +19,7 @@ export default function EmployerMatchedJobs(){
 
         <div id="employerJobsPage">
             <EmployerNavBar />
-            <section id="cardContainer">
+            <section id="cardContainer2">
                 {jobs?  <JobList jobs={jobs}/>:<NoJobs />}
             </section>
         </div>}

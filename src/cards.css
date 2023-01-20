@@ -150,3 +150,9 @@
 #noJobsCard input {
     margin: 0;
 }
+#cardContainer2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
